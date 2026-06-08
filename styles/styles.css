@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Imperial+Script&display=swap');
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('/fonts/GoogleSans.ttf');
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 253, 246);
+    font-family: 'Google Sans', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.752), rgba(0, 0, 0, 0.751)), url(/images/background-default.png);
+    background-size: cover;
+    background-position: center;
+    height: 230px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.716);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
+
+header h1 {
+    font-family: 'Carter One', cursive;
+    color: rgb(241, 80, 0);
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav {
+    height: 30px;
+    background-color: rgb(241, 80, 0);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+    height: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.423);
+}
+
+a:hover {
+    text-shadow: 0 0 5px rgba(255, 253, 246, 0.133);
+    transition: all 0.3s ease-in-out;
+
+}
+
+main {
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(255, 249, 227);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.081);
+}
+
+.lanches-container, .acompanhamentos-container, .bebidas-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 760px) {
+    .lanches-container, .acompanhamentos-container, .bebidas-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+.title-cardapio {
+    text-align: center;
+    padding: 20px;
+    font-size: 45px;
+    color: rgb(241, 80, 0);
+    font-family: 'Arizonia', cursive;
+}
+
+.lanche, .acompanhamento, .bebida {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    max-width: 420px;
+    text-align: center;
+}
+
+img {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.31));
+}
+
+.bebida img {
+    scale: 75%;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    gap: 5px;
+}
+
+h3 {
+    font-size: 25px;
+    color: rgb(138, 53, 0);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.preco {
+    font-size: 20px;
+    color: rgb(25, 184, 0);
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(241, 80, 0);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+    transition: all 0.1s ease;
+}
+
+footer {
+    background-color: rgb(241, 80, 0);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
