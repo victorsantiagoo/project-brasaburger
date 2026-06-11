@@ -16,4 +16,4 @@ Landing Page de uma hamburgueria fictícia criada para praticar HTML e CSS.
 
 🔗 Projeto Online
 
-<a>https://victorsantiagoo.github.io/project-brasaburger/</a>
+<a target=blank>https://victorsantiagoo.github.io/project-brasaburger/</a>
